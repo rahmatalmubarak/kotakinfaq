@@ -143,7 +143,6 @@ include_once('koneksi.php');
   function tampiluang(){
   $.ajax({
   url : "uang.php",
-  method : "GET",
   success : function(data) {
   var json = data,
   obj = JSON.parse(json);
