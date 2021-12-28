@@ -53,6 +53,13 @@ require 'total.php';
         <td><?php echo $row['date']; ?></td>
         <td><?php echo $row['total']; ?></td>
     </tr>
+    <?php } 
+    $total =0;
+    while($row = $result->fetch_array()){
+    ?>
+    <tr>
+        <td><?php echo $total +=$row['total']; ?></td>
+    </tr>
     <?php } ?>
     </table>
 	
